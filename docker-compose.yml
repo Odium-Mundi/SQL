@@ -11,3 +11,9 @@ services:
       - MYSQL_PASSWORD=pass
     volumes:
       - ./init:/docker-entrypoint-initdb.d
+      
+   adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
