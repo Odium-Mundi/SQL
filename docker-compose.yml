@@ -12,7 +12,7 @@ services:
     volumes:
       - ./init:/docker-entrypoint-initdb.d
       
-   adminer:
+  adminer:
     image: adminer
     restart: always
     ports:
